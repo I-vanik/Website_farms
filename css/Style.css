@@ -81,7 +81,7 @@ body {
 }
 
 .header{
-    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.384)), url(/img/03b59af67fa1544cad20fdf42c507ac0.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.384)), url(/img/Header.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
