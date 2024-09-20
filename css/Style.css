@@ -81,14 +81,14 @@ body {
 }
 
 .header{
-    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.384)), url(/img/Header.jpg);
+    background-image: url(/img/Header.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
     
 }
 .blur{
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.418); 
     backdrop-filter: blur(5px); 
 }
 
