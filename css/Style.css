@@ -81,7 +81,7 @@ body {
 }
 
 .header{
-    background-image: url(/img/Header.jpg);
+    background-image: url(../img/Header.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
