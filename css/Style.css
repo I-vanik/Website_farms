@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --accent-color: #f4914e;
+    --dark-text-color: #000;
+    --white-text-color: #fff;
+}
+
+body {
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding:  0 40px 0 40px;
+}
+
+.btn{
+    margin-top: 70px;
+    width: 194px;
+    height: 60px;
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    border-radius: 3px;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+}
+
+/* Навигация */
+
+.navigate {
+    
+    height:100px; 
+    background-color: rgba(92,96,66, 0.7); 
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+   
+}
+
+.nav-list{
+}
+
+.nav-list ul {
+    display: flex;
+}
+.nav-list-items {
+    list-style-type: none;
+    margin: 0 20px 0 0;
+}
+
+.nav-list-items:last-child{
+    margin: 0;
+}
+
+.nav-list-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-text-color);
+}
+
+.nav-logo {
+    color: var(--white-text-color);
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.nav-social {
+    margin: 0 100px 0 0;
+}
+.nav-social a {
+}
+.t-sociallinks__svg {
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+.header{
+    background-image: url(../img/Header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+.blur{
+    background: rgba(0, 0, 0, 0.418); 
+    backdrop-filter: blur(5px); 
+}
+
+.header section{
+    text-align: center;
+    height: 100%;
+}
+.header section h1{
+    color: var(--white-text-color);
+    font-size: 70px;
+    margin: 6% 0 0 0;
+}
+.header section p{
+    color: var(--white-text-color);
+    font-size: 22px;
+    margin-top: 30px;
+
+}
+
+.header-arrow{
+    margin: 5% 0 0 0;
+    padding: 0 0 5% 0;
+}
+
+/* MAIN */
+.main {
+}
+
+
+/* section-promo */
+
+
+.promo {
+    padding: 150px 0 150px 0;
+}
+.promo-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo-info-text {
+    margin: 0 40px 0 0;
+}
+.promo-info-text h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+}
+.promo-info-text p {
+    font-size: 20px;
+    line-height: 40px;
+}
+.promo-info-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.promo-info-img img{
+    width: 220px;
+    height: 220px;
+}
+
+/* Services */
+
+.services {
+    padding: 100px 0 100px 0;
+    background-color: #f0f0f0e5;
+}
+.services-title {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 0 100px 0;
+}
+.services-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 4%;
+    padding: 0 80px 0 80px;
+}
+
+
+.services-items img {
+    width: 80px;
+    height: 80px;
+}
+.services-item {
+    width: 300px;
+}
+.services-item h3{
+    font-size: 30px;
+    padding: 20px 0 15px 0;
+}
+.services-item p{
+    line-height: 35px;
+    font-weight: 100;
+}
+
+/* Connetion */
+
+.connection{
+    background: url(..//img/Worktable.jpg);
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+.filter{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.connection-title {
+    padding-top: 70px;
+    color: var(--white-text-color);
+    font-size: 48px;
+}
+.connection-text {
+    margin-top: 40px;
+    color: var(--white-text-color);
+    font-size: 24px;
+}
+
+.connection .btn {
+    margin-bottom: 90px;
+}
+
+
+/* advantages */
+
+.advantages {
+    padding: 120px 0;
+    text-align: center;;
+}
+.advantages-title {
+    font-size: 42px;
+}
+.advantges-text {
+    max-width: 560px;
+    margin: 40px auto 0 auto;
+    font-size: 20px;    
+}
+.advantges-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+}
+.advantges-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advantges-item-img {
+    width: 70px;
+
+}
+.advantges-item-info {
+    margin-left: 50px;
+    width: 450px;
+    text-align: start;
+}
+.advantges-item-info-title {
+    font-size: 20px;
+}
+.advantges-item-info-text {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* reviews */
+
+.reviews {
+    background-color: #ececec;
+    padding: 100px 0;
+    text-align: center;
+}
+.reviews-title {
+    font-size: 42px;
+}
+.reviews-items {
+    display: grid;
+    grid-template-columns: repeat(2, 430px);
+    gap: 70px;
+    column-gap: 220px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.reviews-item {
+    display: flex;
+    align-items: start;
+}
+.reviews-item-img {
+    width: 100px;
+    border-radius: 50px;
+}
+.reviews-item-info {
+    text-align: start;
+    margin-left: 30px;
+   
+}
+.reviews-item-info-text {
+    line-height: 160%;
+    width: 400px;
+}
+.reviews-item-info-name {
+    margin-top: 13px;
+}
+.post {
+    margin-top: 7px;
+}
+
+/* connection-form */
+
+.connection-form {
+    background: url(..//img/phone.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+
+.connection-form-items{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding:  80px 0;
+
+}
+.connection-form-items input {
+    width: 194px;
+    height: 60px;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--white-text-color);
+    color: var(--white-text-color);
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: var(--white-text-color);
+}
+
+.btn-form{
+    margin: 0;
+}
+
+/* footer */
+
+.footer {
+    padding: 150px 0 30px 0;
+    text-align: center;
+}
+.footer-phone {
+    margin-top: 40px;
+    font-size: 24px;
+}
+.footer-email {
+    font-size: 24px;
+}
+.footer-adres {
+    margin-top: 40px;
+    font-size: 20px;
+}
+.footer-social {
+    
+    margin: 40px 0 0 0;
+}
+.footer-sociallinks__svg {
+    width: 50px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navigate {
+        height:60px; 
+    }
+    .nav-flex {
+        min-height: 60px;
+       
+    }
+    .nav-list-link {
+        font-size: 12px;
+    }
+    .nav-logo {
+        font-size: 20px;
+        
+    }
+    .nav-social {
+        margin: 0 100px 0 0;
+    }
+    .nav-social a {
+    }
+    .t-sociallinks__svg {
+        margin: 0 20px 0 0;
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+
+
+    
+    .header section{
+        text-align: center;
+        height: 100%;
+    }
+    .header section h1{
+        color: var(--white-text-color);
+        font-size: 42px;
+        margin: 6% 0 0 0;
+    }
+    .header section p{
+        color: var(--white-text-color);
+        font-size: 20px;
+        margin: 4% 0 0 0;
+    
+    }
+    .header-btn{
+        display: inline-block;
+        margin: 5% 0 0 0;
+    
+    }
+    .header-btn-back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 164px;
+        height: 50px;
+        background-color: #f4914e;
+        color: var(--white-text-color);
+        border-radius: 3px;
+        font-weight: 600;
+        
+    }
+    .header-arrow{
+        margin: 5% 0 0 0;
+        padding: 0 0 5% 0;
+    }
+
+
+
+
+
+
+
+    
+    .promo-info {
+       flex-direction: column;
+    }
+    .promo-info-text {
+        margin: 0 0 50px 0;
+
+        text-align: center;
+    }
+    br{
+        display: none;
+    }
+    .services-items {
+        padding: 0 0 0 0cqi;
+    }
+
+    .services-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .navigate {
+        background-color: rgba(92,96,66, 0.7); 
+        padding: 15px 0;
+    }
+   
+    
+    .nav-list{
+    }
+    
+    .nav-list ul {
+        display: flex;
+    }
+  
+}
+
+@media screen and (max-width: 750px) {
+    .nav-flex {
+        display: flex;
+        flex-direction: column-reverse;          
+    }
+    .nav-social{
+        margin: 0;
+        display: none;
+    }
+    .t-sociallinks__svg{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+}
