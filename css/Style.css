@@ -25,6 +25,7 @@ body {
 .container {
     margin: 0 auto;
     padding:  0 40px 0 40px;
+    
 }
 
 .btn{
@@ -59,6 +60,9 @@ body {
 
 .nav-list ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .nav-list-items {
     list-style-type: none;
@@ -97,23 +101,24 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; 
-    
+    height: 100vh;
 }
 .blur{
     background: rgba(0, 0, 0, 0.418); 
     backdrop-filter: blur(5px); 
+    height: 100vh;
 }
 
-.header section{
+.section-header{
     text-align: center;
-    height: 100%;
+    height: auto;
 }
-.header section h1{
+.header-title{
     color: var(--white-text-color);
     font-size: 70px;
     margin: 6% 0 0 0;
 }
-.header section p{
+.header-text{
     color: var(--white-text-color);
     font-size: 22px;
     margin-top: 30px;
@@ -167,8 +172,10 @@ body {
 /* Services */
 
 .services {
+    
     padding: 100px 0 100px 0;
     background-color: #f0f0f0e5;
+    
 }
 .services-title {
     font-size: 42px;
@@ -188,10 +195,9 @@ body {
 
 .services-items img {
     width: 80px;
-    height: 80px;
 }
 .services-item {
-    width: 300px;
+    
 }
 .services-item h3{
     font-size: 30px;
@@ -354,6 +360,7 @@ body {
 .footer {
     padding: 150px 0 30px 0;
     text-align: center;
+    background-color: #ebebeb;
 }
 .footer-phone {
     margin-top: 40px;
@@ -406,16 +413,15 @@ body {
 
 
     
-    .header section{
+    .section-header{
         text-align: center;
         height: 100%;
     }
-    .header section h1{
-        color: var(--white-text-color);
+    .header-title{
         font-size: 42px;
         margin: 6% 0 0 0;
     }
-    .header section p{
+    .header-text{
         color: var(--white-text-color);
         font-size: 20px;
         margin: 4% 0 0 0;
@@ -443,13 +449,6 @@ body {
         padding: 0 0 5% 0;
     }
 
-
-
-
-
-
-
-    
     .promo-info {
        flex-direction: column;
     }
@@ -474,6 +473,7 @@ body {
     .navigate {
         background-color: rgba(92,96,66, 0.7); 
         padding: 15px 0;
+        height: auto;
     }
    
     
@@ -486,7 +486,7 @@ body {
   
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .nav-flex {
         display: flex;
         flex-direction: column-reverse;          
@@ -495,11 +495,130 @@ body {
         margin: 0;
         display: none;
     }
+    .footer-social{
+        display: block;
+        margin-top: 40px;
+    }
     .t-sociallinks__svg{
         margin: 0;
     }
+    .services {
+        
+    }
+    .services-title{
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .services-items {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .services-items img {
+        width: 60px;
+    }
+
+    .services-item  {
+        margin-top: 40px;
+    }
+    .services-item h3{
+        font-size: 24px;
+        padding: 20px 0 15px 0;
+    }
+    .services-item p{
+        font-size: 14px;
+        line-height: 35px;
+        font-weight: 100;
+    }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
+    .nav-list-link{
+        font-size: 14px;
+    }
+    
+    .nav-list ul {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        
+    }
+    .nav-list-items {
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .nav-list-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--white-text-color);
+    }
 
+    .section-header{
+        padding: 0 25px;
+    }
+    
+    .header-title{
+        color: var(--white-text-color);
+        font-size: 32px;
+        margin-top: 40%;
+    }
+    .header-text{
+        margin-top: 10%;
+        font-size: 16px;
+    }
+
+    .btn{
+        margin-top: 70px;
+        width: 144px;
+        height: 40px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .header-arrow{
+        padding: 40px;
+    }
+
+    .promo-info-text {
+        margin: 0;
+    }
+    .promo-info-text h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+    .promo-info-text p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .promo-info-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+
+    .connection-title{
+        font-size: 34px;
+    }
+    .connection-text{
+        font-size: 20px;
+    }
+    .advantages-title{
+        font-size: 34px;
+    }
+    .advantges-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .advantges-item-img {
+        margin-bottom: 20px;
+        
+    }
+    .advantges-item-info{
+        text-align: center;
+        margin-left: 0;
+        width: auto;
+    }
 }
