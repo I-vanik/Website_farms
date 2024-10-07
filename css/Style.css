@@ -51,7 +51,7 @@ body {
     
     /* height:100px;  */
     height: auto;
-    padding: 5px 0 10px 0;
+    padding: 10px 0 10px 0;
     background-color: rgba(92,96,66, 0.7); 
 }
 .nav-flex {
@@ -98,23 +98,27 @@ body {
     font-weight: 600;
     
 }
+.nav-logo img {
+    width: 70px;
+    margin-right: 250px;
+}
 .nav-social {
     display: grid;
     
     row-gap: 5px;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(2, 1fr);
-    margin: 0 100px 0 0;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 0 100px;
 }
 .nav-social a {
     color: var(--dark-text-color);
 }
 .t-sociallinks__svg {
     /* margin: 0 20px 0 0; */
-    width: 30px;
+    width: 32px;
 }
 .nav-social-tel{
+    display: inline-block;
     background-color: var(--white-text-color);
     padding: 8px 15px;
     border-radius: 50px;
@@ -124,8 +128,8 @@ body {
     background-color: #cdcdcd;
 }
 .nav-social-four{
-    grid-column: 1/4;
-    grid-row: 2/3;
+    grid-column: 2/5;
+    grid-row: 1/2;
 }
 
 .header{
@@ -228,9 +232,6 @@ body {
 .services-items img {
     width: 80px;
 }
-.services-item {
-    
-}
 .services-item h3{
     font-size: 30px;
     padding: 20px 0 15px 0;
@@ -253,14 +254,9 @@ body {
 
 }
 .connection-title {
-    padding-top: 70px;
+    padding-top: 80px;
     color: var(--white-text-color);
-    font-size: 48px;
-}
-.connection-text {
-    margin-top: 40px;
-    color: var(--white-text-color);
-    font-size: 24px;
+    font-size: 38px;
 }
 
 .connection .btn {
@@ -310,105 +306,33 @@ body {
     font-size: 18px;
 }
 
-/* reviews */
-
-.reviews {
-    background-color: #ececec;
-    padding: 100px 0;
-    text-align: center;
-    
-}
-.reviews-title {
-    font-size: 42px;
-}
-.reviews-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 70px auto 0 auto;
-}
-.reviews-item {
-    display: flex;
-    align-items: start;
-}
-.reviews-item-img {
-    width: 100px;
-    border-radius: 50px;
-}
-.reviews-item-info {
-    text-align: start;
-    margin-left: 30px;
-   
-}
-.reviews-item-info-text {
-    line-height: 160%;
-    min-height: 80px;
-}
-.reviews-item-info-name {
-    margin-top: 13px;
-}
-.post {
-    margin-top: 7px;
-}
-
-/* connection-form */
-
-.connection-form {
-    background: url(..//img/phone.jpg);
-    background-size: cover;
-    text-align: center;
-}
-
-
-.connection-form-items{
-    display: grid;
-    grid-template-columns: repeat(4, 230px);
-    gap: 20px;
-    justify-content: center;
-    padding:  80px 0;
-
-}
-.connection-form-items input {
-    width: 194px;
-    height: 60px;
-    background: transparent;
-    outline: none;
-    border: 1px solid var(--white-text-color);
-    color: var(--white-text-color);
-    padding: 0 10px;
-    font-size: 20px;
-}
-
-::placeholder{
-    color: var(--white-text-color);
-}
-
-.btn-form{
-    margin: 0;
-}
-
 /* footer */
 
 .footer {
-    padding: 150px 0 30px 0;
+    padding: 75px 0 30px 0;
     text-align: center;
     background-color: #ebebeb;
 }
 .footer-phone {
     margin-top: 40px;
     font-size: 24px;
+    color: #000;
 }
 .footer-email {
     font-size: 24px;
+    color: #000;
+}
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
 }
 .footer-adres {
     margin-top: 40px;
     font-size: 20px;
 }
 .footer-social {
-    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin: 40px 0 0 0;
 }
 .footer-sociallinks__svg {
@@ -418,12 +342,14 @@ body {
 
 @media screen and (max-width: 1200px) {
     .navigate {
-        height:60px; 
+        height:60px;
+        padding: 15px 0;
     }
     .nav-flex {
         min-height: 60px;
        
     }
+    
     .nav-list-link {
         font-size: 12px;
     }
@@ -431,22 +357,36 @@ body {
         font-size: 20px;
         
     }
+
+    .nav-logo img {
+        width: 50px;
+        margin-right: 200px;
+    }
     .nav-social {
-        margin: 0 100px 0 0;
+        margin: 0 0 0 70px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+    }
+    .t-sociallinks__svg{
+        display: flex;
+        align-self: center;
+    }
+    .nav-social-tel{
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+    .nav-social-four{
+        grid-column: 2/5;
+        grid-row: 1/2;
+
     }
     .nav-social a {
     }
     .t-sociallinks__svg {
-        margin: 0 20px 0 0;
-        width: 30px;
-        height: 30px;
+        width: 23px;
     }
-
-
-
-
-
-    
     .section-header{
         text-align: center;
         height: 100%;
@@ -509,11 +449,6 @@ body {
         padding: 15px 0;
         height: auto;
     }
-   
-    
-    .nav-list{
-    }
-    
     .nav-list ul {
         display: flex;
     }
@@ -538,7 +473,7 @@ body {
     .connection-text{
         font-size: 20px;
     }
-    .connection-form-items{
+    /* .connection-form-items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -556,7 +491,7 @@ body {
     }
     .btn-form{
         margin: 0;
-    }
+    } */
 
 
 }
@@ -564,11 +499,15 @@ body {
 @media screen and (max-width: 800px) {
     .nav-flex {
         display: flex;
-        flex-direction: column-reverse;          
+        flex-direction: column;          
     }
-    .nav-social{
+    .nav-social {
         margin: 0;
-        display: none;
+        display: block;
+    }
+    .nav-logo img {
+        width: 50px;
+        margin-right: 0;
     }
     .footer-social{
         display: block;
@@ -576,6 +515,7 @@ body {
     }
     .t-sociallinks__svg{
         margin: 0;
+        display: none;
     }
     .services {
         
@@ -585,6 +525,9 @@ body {
         padding: 0;
     }
 
+    .nav-social-tel{
+        margin-top: 10px;
+    }
     .services-items {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
@@ -614,12 +557,14 @@ body {
     }
     
     .nav-list ul {
-        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
         
+    }
+    .nav-social-tel{
+        margin-top: 10px;
     }
     .nav-list-items {
         list-style-type: none;
@@ -639,7 +584,7 @@ body {
     
     .header-title{
         color: var(--white-text-color);
-        font-size: 32px;
+        font-size: 26px;
         margin-top: 40%;
     }
     .header-text{
