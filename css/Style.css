@@ -63,9 +63,6 @@ body {
    
 }
 
-.nav-list{
-}
-
 .nav-list ul {
     display: flex;
     flex-wrap: wrap;
@@ -162,8 +159,8 @@ body {
 }
 
 .header-arrow{
-    margin: 5% 0 0 0;
-    padding: 0 0 5% 0;
+    /* margin: 5% 0 ; */
+    padding: 5% 0;
 }
 
 /* MAIN */

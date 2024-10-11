@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/catalog.css">
     <title>АВК-Агро | Каталог</title>   
+
+    
 </head>
 <body>
     <nav class="navigate">
@@ -16,8 +18,8 @@
                 <div class="nav-list">
                     <ul>
                         <li class="nav-list-items"><a href="#" class="nav-list-link">Продукция</a></li>
-                        <li class="nav-list-items"><a href="#" class="nav-list-link">Контакты</a></li>
-                        <li class="nav-list-items"><a href="#" class="nav-list-link">О компании</a></li>
+                        <li class="nav-list-items"><a href="index.html#contact" class="nav-list-link">Контакты</a></li>
+                        <li class="nav-list-items"><a href="index.html" class="nav-list-link">О компании</a></li>
                     </ul>
                 </div>
                 <!-- <div class="nav-logo">OOO АВК-Агро</div> -->
@@ -43,23 +45,23 @@
             <div class="main-catalog">
                 <div class="main-sidebar">
                     <div class="main-sidebar-items">
-                        <button id="modalCornBtn" class="main-sideba-btn">
+                        <button modal-btn='modal1' class="main-sideba-btn">
                             <img src="icons/catalog/icon-corn.png" alt="">
                             <p>Семена кукурузы</p>
                         </button>
-                        <button class="main-sideba-btn">
+                        <button  class="main-sideba-btn">
                             <img src="icons/catalog/icon-sunflower.png" alt="">
                             <p>Семена подсолнечника</p>
                         </button>
-                        <button class="main-sideba-btn">
+                        <button modal-btn='modal3' class="main-sideba-btn">
                             <img src="icons/catalog/icon-colorant.png" alt="">
                             <p>Красители для семян</p>
                         </button>
-                        <button class="main-sideba-btn">
+                        <button modal-btn='modal4' class="main-sideba-btn">
                             <img src="icons/catalog/icon-pea.png" alt="">
                             <p>Семена горошка</p>
                         </button>
-                        <button class="main-sideba-btn">
+                        <button modal-btn='modal5' class="main-sideba-btn">
                             <img src="icons/catalog/icon-vegetables.png" alt="">
                             <p>Семена овощей</p>
                         </button>
@@ -79,38 +81,77 @@
                     </div>
                     <div class="main-info-logo">
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/PITURA.jpg" alt="">
                         </div>
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/BAYER.jpg" alt="">
                         </div>
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/NUNHEMS.png" alt="">
                         </div>
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/SYNGENTA.png" alt="">
                         </div>
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/GAVRISH.jpg" alt="">
                         </div>
                         <div class="main-info-logo-item">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/SAKATA.png" alt="">
                         </div>
                         <div class="main-info-logo-item main-info-logo-item-grid">
-                            <img src="img/company/Bayer-Logo-500x281.png" alt="">
+                            <img src="img/company/SIPKAM.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div id="modalCorn" class="modal-corn">
-                    <div class="modalCorn-content">
-                        <span class="modal-corn-close">&times;</span>
+                <div modal-window='modal1'  class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
                         <h3>Выберите вид</h3>
                         <div class="modal-btn-place">
-                            <form action="catalogFile/sakata.pdf" target="_blank">
+                            <form action="catalogFile/Семена кукурузы от CAT210.pdf" target="_blank">
                                 <button class="modal-btn-item" >Семена кукурузы от CAT210</button>
                             </form>
-                            <form action="">
+                            <form action="catalogFile/Семена кукурузы от MAY.pdf" target="_blank">
                                 <button class="modal-btn-item">Семена кукурузы от MAY</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div modal-window='modal3'  class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <h3>Выберите</h3>
+                        <div class="modal-btn-place">
+                            <form action="catalogFile/Красители для семян.pdf" target="_blank">
+                                <button class="modal-btn-item" >Красители для семян</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div modal-window='modal4'  class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <h3>Выберите</h3>
+                        <div class="modal-btn-place">
+                            <form action="catalogFile/Семена гороха.pdf" target="_blank">
+                                <button class="modal-btn-item" >Семена гороха</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div modal-window='modal5'  class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <h3>Выберите</h3>
+                        <div class="modal-btn-place">
+                            <form action="catalogFile/Семена овощей от NUNHEMS.pdf" target="_blank">
+                                <button class="modal-btn-item" >Семена овощей от NUNHEMS</button>
+                            </form>
+                            <form action="catalogFile/Семена овощей от SAKATA.pdf" target="_blank">
+                                <button class="modal-btn-item" >Семена овощей от SAKATA</button>
+                            </form>
+                            <form action="catalogFile/Семена овощей от VILMORIN.pdf" target="_blank">
+                                <button class="modal-btn-item" >Семена овощей от VILMORIN</button>
                             </form>
                         </div>
                     </div>
@@ -119,7 +160,9 @@
         </div>
     </section>
 
-<script src="script/modal.js"></script>
+
+    <script src="script/modal.js" defer></script>
+
 
 </body>
 </html>
