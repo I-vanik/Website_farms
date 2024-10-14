@@ -11,6 +11,7 @@ a{
 :root {
     --accent-color: #f4914e;
     --dark-text-color: #000;
+    --gray--text-color:#000000a8;
     --white-text-color: #fff;
 }
 
@@ -52,7 +53,7 @@ body {
     /* height:100px;  */
     height: auto;
     padding: 10px 0 10px 0;
-    background-color: rgba(92,96,66, 0.7); 
+    background-color:  var(--white-text-color); 
 }
 .nav-flex {
     display: flex;
@@ -81,34 +82,27 @@ body {
 .nav-list-link {
     font-size: 16px;
     font-weight: 600;
-    color: var(--white-text-color);
+    color: var(--gray--text-color);
 }
 
 .nav-list-link:hover{
-    border-bottom: 1px solid var(--white-text-color);
+    border-bottom: 1px solid var(--dark-text-color);
     
 }
 
-.nav-logo {
-    color: var(--white-text-color);
-    font-size: 24px;
-    font-weight: 600;
-    
-}
 .nav-logo img {
-    width: 70px;
-    margin-right: 250px;
+    width: 100px;
+    margin-right: 220px;
 }
 .nav-social {
     display: grid;
-    
     row-gap: 5px;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 0 0 100px;
 }
 .nav-social a {
-    color: var(--dark-text-color);
+    color: var(--white-text-color);
 }
 .t-sociallinks__svg {
     /* margin: 0 20px 0 0; */
@@ -116,7 +110,7 @@ body {
 }
 .nav-social-tel{
     display: inline-block;
-    background-color: var(--white-text-color);
+    background-color: var(--gray--text-color);
     padding: 8px 15px;
     border-radius: 50px;
     font-size: 14px;
@@ -139,6 +133,7 @@ body {
 .blur{
     background: rgba(0, 0, 0, 0.418); 
     backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(2px) contrast(60%);
     height: 100vh;
 }
 
@@ -162,11 +157,6 @@ body {
     /* margin: 5% 0 ; */
     padding: 5% 0;
 }
-
-/* MAIN */
-.main {
-}
-
 
 /* section-promo */
 
@@ -351,12 +341,11 @@ body {
         font-size: 12px;
     }
     .nav-logo {
-        font-size: 20px;
-        
+        font-size: 20px; 
     }
 
     .nav-logo img {
-        width: 50px;
+        width: 70px;
         margin-right: 200px;
     }
     .nav-social {
@@ -378,8 +367,6 @@ body {
         grid-column: 2/5;
         grid-row: 1/2;
 
-    }
-    .nav-social a {
     }
     .t-sociallinks__svg {
         width: 23px;
@@ -441,8 +428,7 @@ body {
 }
 
 @media screen and (max-width: 950px) {
-    .navigate {
-        background-color: rgba(92,96,66, 0.7); 
+    .navigate { 
         padding: 15px 0;
         height: auto;
     }
@@ -572,7 +558,6 @@ body {
     .nav-list-link {
         font-size: 16px;
         font-weight: 600;
-        color: var(--white-text-color);
     }
 
     .section-header{
